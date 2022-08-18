@@ -1,38 +1,60 @@
-# create-svelte
+# Link Shortener
+## _Link Shortener App with SvelteKit, TypeScript, and Directus.io_
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Features
+- headless CMS to store all the links at one place([directus])
+- shorten your links with your custom solution
 
-## Creating a project
+## Tech
 
-If you're seeing this, you've probably already done this step. Congrats!
+Link Shortener uses following technology stacks:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- [svelte] - a free and open-sourSvelteKit is an application framework powered by Sveltece front end compiler
+- [SvelteKit] - an application framework powered by Svelte
+- [TypeScript] - a strongly typed programming language that builds on JavaScript, a strict syntactical superset of JavaScript and adds optional static typing to the language.
+- [dotenv] - Loads environment variables from .env file.
+- [directus] - an open-source data platform that instantly gives any new or existing SQL database an API (REST+GraphQL) and a no-code data collaboration app. (headless CMS)
 
-# create a new project in my-app
-npm create svelte@latest my-app
+## Installation
+
+To run Link Shortener project,
+
+- clone git repository
+
+create .env file to the root directory of the project
+- define following in the .env file
+```
+ DIRECTUS_API_TOKEN=YOUR_DIRECTUS_API_TOKEN
+ DIRECTUS_URL=YOUR_DIRECTUS_URL
 ```
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- run the following commands in terminal
 
-```bash
+```sh
+npm install
+```
+For development environments...
+
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Start script
 
-To create a production version of your app:
+```sh
+npm run start
+```
 
-```bash
+Build script
+
+```sh
 npm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+    
+   [svelte]: <https://svelte.dev/>
+   [SvelteKit]: <https://kit.svelte.dev/>
+   [dotenv]: <https://www.npmjs.com/package/dotenv/>
+   [directus]: <https://directus.io/>
+   [TypeScript]: <https://www.typescriptlang.org/>
+   
